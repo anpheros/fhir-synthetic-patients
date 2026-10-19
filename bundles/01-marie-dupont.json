@@ -1,0 +1,2644 @@
+{
+  "resourceType": "Bundle",
+  "type": "collection",
+  "entry": [
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Patient/00e7d29e-b800-4489-b018-df6f3282dc53",
+      "resource": {
+        "resourceType": "Patient",
+        "identifier": [
+          {
+            "system": "https://anpheros.com/fhir/sid/sandbox-persona",
+            "value": "p27"
+          }
+        ],
+        "name": [
+          {
+            "family": "Dupont",
+            "given": [
+              "Marie"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1995-07-07",
+        "address": [
+          {
+            "country": "FR"
+          }
+        ],
+        "communication": [
+          {
+            "language": {
+              "coding": [
+                {
+                  "system": "urn:ietf:bcp:47",
+                  "code": "fr"
+                }
+              ]
+            },
+            "preferred": true
+          }
+        ],
+        "id": "00e7d29e-b800-4489-b018-df6f3282dc53"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/AllergyIntolerance/cc36556e-c4c0-4cba-9a5c-7052e036315a",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "clinicalStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+              "code": "active"
+            }
+          ]
+        },
+        "verificationStatus": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+              "code": "confirmed"
+            }
+          ]
+        },
+        "category": [
+          "environment"
+        ],
+        "code": {
+          "text": "Latex"
+        },
+        "patient": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "id": "cc36556e-c4c0-4cba-9a5c-7052e036315a"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/DocumentReference/b5d3477b-dac0-4d97-9db5-c6d68fc76f81",
+      "resource": {
+        "resourceType": "DocumentReference",
+        "status": "current",
+        "type": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "11502-2",
+              "display": "Laboratory report"
+            }
+          ]
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "date": "2026-07-01T07:30:00Z",
+        "description": "Laboratory report 2026-07-01",
+        "content": [
+          {
+            "attachment": {
+              "contentType": "application/pdf",
+              "title": "lab-report-2026-07-01.pdf"
+            }
+          }
+        ],
+        "id": "b5d3477b-dac0-4d97-9db5-c6d68fc76f81"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/0b8bbbf5-c1e4-42e7-ad05-78442066000f",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-01T08:47:00Z",
+        "valueQuantity": {
+          "value": 59.8,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "0b8bbbf5-c1e4-42e7-ad05-78442066000f"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/1581421b-7104-43d5-9281-5615e31e7027",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-05-02T08:42:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 108,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 68,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "1581421b-7104-43d5-9281-5615e31e7027"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/15fcc3a9-d506-40ff-b837-c2b35f11d38e",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-09-29T08:35:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 116,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 76,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "15fcc3a9-d506-40ff-b837-c2b35f11d38e"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/1c13a7e2-4fd6-4c0f-ab51-98481f862674",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-09-29T08:35:00Z",
+        "valueQuantity": {
+          "value": 59.7,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "1c13a7e2-4fd6-4c0f-ab51-98481f862674"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/215f6828-6215-46ce-84b6-1a254627a617",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "777-3",
+              "display": "Platelets [#/volume] in Blood"
+            }
+          ],
+          "text": "Platelets [#/volume] in Blood"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-01T07:30:00Z",
+        "valueQuantity": {
+          "value": 244,
+          "unit": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*3/uL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 150,
+              "unit": "10*3/uL",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*3/uL"
+            },
+            "high": {
+              "value": 400,
+              "unit": "10*3/uL",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*3/uL"
+            }
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "DocumentReference/b5d3477b-dac0-4d97-9db5-c6d68fc76f81"
+          }
+        ],
+        "id": "215f6828-6215-46ce-84b6-1a254627a617"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/2533b26b-b0bf-46aa-bd78-f284cbda3aef",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-01T08:47:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 119,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 70,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "2533b26b-b0bf-46aa-bd78-f284cbda3aef"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/3424fc0c-5d1f-4c97-8aa9-72d73608b66c",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-05-02T08:42:00Z",
+        "valueQuantity": {
+          "value": 60.5,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "3424fc0c-5d1f-4c97-8aa9-72d73608b66c"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/4a05ab8a-7ef1-41a0-b923-03d39ea440c8",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-31T08:30:00Z",
+        "valueQuantity": {
+          "value": 62,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "4a05ab8a-7ef1-41a0-b923-03d39ea440c8"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/4d843de8-da12-4b27-872e-76f0f33855f1",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-06-01T08:40:00Z",
+        "valueQuantity": {
+          "value": 60.3,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "4d843de8-da12-4b27-872e-76f0f33855f1"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/4fa42826-144b-4653-ae5c-376860f2b561",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-04-02T08:44:00Z",
+        "valueQuantity": {
+          "value": 60.1,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "4fa42826-144b-4653-ae5c-376860f2b561"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/6e147f01-5358-4415-94f8-f5bcc7aca5d6",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-04-02T08:44:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 122,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 74,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "6e147f01-5358-4415-94f8-f5bcc7aca5d6"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/7911c163-deb4-4912-83a0-ae3e3d0a26e5",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-31T08:30:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 112,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 71,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "7911c163-deb4-4912-83a0-ae3e3d0a26e5"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/8792be0a-06de-4aa1-ac14-29b1db2a86c4",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "6690-2",
+              "display": "Leukocytes [#/volume] in Blood"
+            }
+          ],
+          "text": "Leukocytes [#/volume] in Blood"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-01T07:30:00Z",
+        "valueQuantity": {
+          "value": 6.6,
+          "unit": "10*3/uL",
+          "system": "http://unitsofmeasure.org",
+          "code": "10*3/uL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 4.0,
+              "unit": "10*3/uL",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*3/uL"
+            },
+            "high": {
+              "value": 11.0,
+              "unit": "10*3/uL",
+              "system": "http://unitsofmeasure.org",
+              "code": "10*3/uL"
+            }
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "DocumentReference/b5d3477b-dac0-4d97-9db5-c6d68fc76f81"
+          }
+        ],
+        "id": "8792be0a-06de-4aa1-ac14-29b1db2a86c4"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/89707c87-8e2f-4b41-88f5-987aca1c4a87",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-08-30T08:07:00Z",
+        "valueQuantity": {
+          "value": 59.8,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "89707c87-8e2f-4b41-88f5-987aca1c4a87"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/8d72ef9f-5b34-4ed6-9ca5-fd2e5edc69e0",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-04-02T08:44:00Z",
+        "valueQuantity": {
+          "value": 69,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "8d72ef9f-5b34-4ed6-9ca5-fd2e5edc69e0"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/af32965e-db10-460f-acaf-ea87ebf03d1e",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-09-29T08:35:00Z",
+        "valueQuantity": {
+          "value": 65,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "af32965e-db10-460f-acaf-ea87ebf03d1e"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/b38d0967-19e6-46d1-9870-6ff9a22f353f",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-06-01T08:40:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 118,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 72,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "b38d0967-19e6-46d1-9870-6ff9a22f353f"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/baa16294-8706-4288-82b0-73b25d5c1e22",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "laboratory"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "718-7",
+              "display": "Hemoglobin [Mass/volume] in Blood"
+            }
+          ],
+          "text": "Hemoglobin [Mass/volume] in Blood"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-01T07:30:00Z",
+        "valueQuantity": {
+          "value": 13.5,
+          "unit": "g/dL",
+          "system": "http://unitsofmeasure.org",
+          "code": "g/dL"
+        },
+        "referenceRange": [
+          {
+            "low": {
+              "value": 12.0,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            },
+            "high": {
+              "value": 15.5,
+              "unit": "g/dL",
+              "system": "http://unitsofmeasure.org",
+              "code": "g/dL"
+            }
+          }
+        ],
+        "derivedFrom": [
+          {
+            "reference": "DocumentReference/b5d3477b-dac0-4d97-9db5-c6d68fc76f81"
+          }
+        ],
+        "id": "baa16294-8706-4288-82b0-73b25d5c1e22"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/c7aafca6-e2cc-4405-8dd9-d2e2bbabfc7f",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "29463-7",
+              "display": "Body weight"
+            }
+          ],
+          "text": "Body weight"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-31T08:30:00Z",
+        "valueQuantity": {
+          "value": 59.5,
+          "unit": "kg",
+          "system": "http://unitsofmeasure.org",
+          "code": "kg"
+        },
+        "id": "c7aafca6-e2cc-4405-8dd9-d2e2bbabfc7f"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/c97d7ac8-ea5f-428a-a8d8-2007b8547bcb",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-08-30T08:07:00Z",
+        "valueQuantity": {
+          "value": 69,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "c97d7ac8-ea5f-428a-a8d8-2007b8547bcb"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/cf62e8d6-4081-4a0a-be44-8f4aaeaf1094",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-06-01T08:40:00Z",
+        "valueQuantity": {
+          "value": 73,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "cf62e8d6-4081-4a0a-be44-8f4aaeaf1094"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/df9d4851-5fae-4e78-9edb-6ba32baf1c26",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood pressure panel"
+            }
+          ],
+          "text": "Blood pressure panel"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-08-30T08:07:00Z",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 120,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic blood pressure"
+                }
+              ]
+            },
+            "valueQuantity": {
+              "value": 67,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ],
+        "id": "df9d4851-5fae-4e78-9edb-6ba32baf1c26"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/eaa6408e-2f9b-46ab-b683-c5fde349d7bf",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-07-01T08:47:00Z",
+        "valueQuantity": {
+          "value": 62,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "eaa6408e-2f9b-46ab-b683-c5fde349d7bf"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Observation/f64637ff-e0f5-43ec-9889-202bf9d80c88",
+      "resource": {
+        "resourceType": "Observation",
+        "status": "final",
+        "category": [
+          {
+            "coding": [
+              {
+                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                "code": "vital-signs"
+              }
+            ]
+          }
+        ],
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "8867-4",
+              "display": "Heart rate"
+            }
+          ],
+          "text": "Heart rate"
+        },
+        "subject": {
+          "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53"
+        },
+        "effectiveDateTime": "2026-05-02T08:42:00Z",
+        "valueQuantity": {
+          "value": 66,
+          "unit": "/min",
+          "system": "http://unitsofmeasure.org",
+          "code": "/min"
+        },
+        "id": "f64637ff-e0f5-43ec-9889-202bf9d80c88"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/03a60a84-8e69-47e9-9592-cce93e1dd2a7",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "DocumentReference/b5d3477b-dac0-4d97-9db5-c6d68fc76f81/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "import"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "03a60a84-8e69-47e9-9592-cce93e1dd2a7"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/042a29d2-ccfb-4a30-abae-f322518c305c",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "AllergyIntolerance/cc36556e-c4c0-4cba-9a5c-7052e036315a/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "042a29d2-ccfb-4a30-abae-f322518c305c"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/10f721f0-0f43-4b50-9543-ebc6b2954ab2",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/c97d7ac8-ea5f-428a-a8d8-2007b8547bcb/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "10f721f0-0f43-4b50-9543-ebc6b2954ab2"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/15c9395e-ac88-48f8-849b-0147ab6a4606",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/15fcc3a9-d506-40ff-b837-c2b35f11d38e/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "15c9395e-ac88-48f8-849b-0147ab6a4606"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/1717d1f7-36d9-4c56-b2ed-7e88ca578203",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/4d843de8-da12-4b27-872e-76f0f33855f1/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "1717d1f7-36d9-4c56-b2ed-7e88ca578203"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/27fbeb97-22a0-4b52-8031-f0937e692c02",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/0b8bbbf5-c1e4-42e7-ad05-78442066000f/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "27fbeb97-22a0-4b52-8031-f0937e692c02"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/2e5297fa-74fa-4a36-8a89-6f272658e3b2",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/1581421b-7104-43d5-9281-5615e31e7027/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "2e5297fa-74fa-4a36-8a89-6f272658e3b2"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/37e3f491-f2d7-4a2b-acb1-65fc59d43eaa",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/af32965e-db10-460f-acaf-ea87ebf03d1e/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "37e3f491-f2d7-4a2b-acb1-65fc59d43eaa"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/48e25b42-3b2d-4a00-bfe0-57072fcce9ac",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/f64637ff-e0f5-43ec-9889-202bf9d80c88/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "48e25b42-3b2d-4a00-bfe0-57072fcce9ac"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/4952c265-e5eb-4246-8d3a-82b3531e8d4f",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/c7aafca6-e2cc-4405-8dd9-d2e2bbabfc7f/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "4952c265-e5eb-4246-8d3a-82b3531e8d4f"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/509e5b8d-ca01-493a-9d56-0b4c8ae98b9c",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/3424fc0c-5d1f-4c97-8aa9-72d73608b66c/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "509e5b8d-ca01-493a-9d56-0b4c8ae98b9c"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/59a76c80-62ea-4c6d-831d-83d1d3f0dae7",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/1c13a7e2-4fd6-4c0f-ab51-98481f862674/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "59a76c80-62ea-4c6d-831d-83d1d3f0dae7"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/65b27825-a2d6-4d23-a09c-18ff4c20fffe",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/cf62e8d6-4081-4a0a-be44-8f4aaeaf1094/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "65b27825-a2d6-4d23-a09c-18ff4c20fffe"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/6add7393-0285-403b-82e0-8711beaf5433",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/2533b26b-b0bf-46aa-bd78-f284cbda3aef/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "6add7393-0285-403b-82e0-8711beaf5433"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/6bd11750-a091-4dbb-9fde-d60724bd8319",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/eaa6408e-2f9b-46ab-b683-c5fde349d7bf/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "6bd11750-a091-4dbb-9fde-d60724bd8319"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/816c9208-330e-4167-ba27-e4f01c662d56",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/b38d0967-19e6-46d1-9870-6ff9a22f353f/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "816c9208-330e-4167-ba27-e4f01c662d56"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/845ba377-c46b-424f-87db-2803cc539847",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/8792be0a-06de-4aa1-ac14-29b1db2a86c4/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "import"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "845ba377-c46b-424f-87db-2803cc539847"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/878f8a98-b6a8-4ff4-8ed1-dac836df0811",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/4a05ab8a-7ef1-41a0-b923-03d39ea440c8/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "878f8a98-b6a8-4ff4-8ed1-dac836df0811"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/9030b939-9ef0-40d1-b94a-814fc7df8e19",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/6e147f01-5358-4415-94f8-f5bcc7aca5d6/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "9030b939-9ef0-40d1-b94a-814fc7df8e19"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/9104550c-c275-4b88-8158-5035bdf1a58c",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/4fa42826-144b-4653-ae5c-376860f2b561/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "9104550c-c275-4b88-8158-5035bdf1a58c"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/9bc79cfe-c7b4-4241-898e-c7e42f14e71b",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/7911c163-deb4-4912-83a0-ae3e3d0a26e5/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "9bc79cfe-c7b4-4241-898e-c7e42f14e71b"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/a24a7c59-990e-4670-9e0b-e2fe2aae1200",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/baa16294-8706-4288-82b0-73b25d5c1e22/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "import"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "a24a7c59-990e-4670-9e0b-e2fe2aae1200"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/bf91d7b1-2ed5-414a-88ff-1c52de132a0b",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/215f6828-6215-46ce-84b6-1a254627a617/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "import"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "bf91d7b1-2ed5-414a-88ff-1c52de132a0b"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/c901012e-f4c8-4347-995b-f122a6f8c798",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/89707c87-8e2f-4b41-88f5-987aca1c4a87/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "c901012e-f4c8-4347-995b-f122a6f8c798"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/ce24c067-c062-4e22-96de-4c954c479c6f",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/df9d4851-5fae-4e78-9edb-6ba32baf1c26/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "patient"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "ce24c067-c062-4e22-96de-4c954c479c6f"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/e9491bf0-86a2-4281-b22b-a6ddd0505a3c",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Patient/00e7d29e-b800-4489-b018-df6f3282dc53/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "import"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "e9491bf0-86a2-4281-b22b-a6ddd0505a3c"
+      }
+    },
+    {
+      "fullUrl": "https://platform.anpheros.com/fhir/R4/Provenance/f5dc8db1-dd97-4d2e-804d-3c7cd6d93a8c",
+      "resource": {
+        "resourceType": "Provenance",
+        "target": [
+          {
+            "reference": "Observation/8d72ef9f-5b34-4ed6-9ca5-fd2e5edc69e0/_history/1"
+          }
+        ],
+        "recorded": "2026-10-01T12:00:00Z",
+        "activity": {
+          "coding": [
+            {
+              "system": "http://terminology.hl7.org/CodeSystem/v3-DataOperation",
+              "code": "CREATE"
+            }
+          ]
+        },
+        "agent": [
+          {
+            "type": {
+              "coding": [
+                {
+                  "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                  "code": "author"
+                }
+              ]
+            },
+            "who": {
+              "identifier": {
+                "system": "https://anpheros.com/fhir/CodeSystem/author-type",
+                "value": "device"
+              },
+              "display": "sandbox-seed"
+            }
+          }
+        ],
+        "entity": [
+          {
+            "role": "source",
+            "what": {
+              "identifier": {
+                "system": "anpheros-sandbox"
+              }
+            }
+          }
+        ],
+        "id": "f5dc8db1-dd97-4d2e-804d-3c7cd6d93a8c"
+      }
+    }
+  ]
+}

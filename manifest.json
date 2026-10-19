@@ -1,0 +1,496 @@
+{
+  "generator_version": 2,
+  "history_days": 182,
+  "history_until": "2026-10-01",
+  "fhir_version": "4.0.1",
+  "patients": [
+    {
+      "file": "bundles/01-marie-dupont.json",
+      "ips": "summaries/01-marie-dupont.json",
+      "patient_id": "00e7d29e-b800-4489-b018-df6f3282dc53",
+      "name": "Marie Dupont",
+      "gender": "female",
+      "birthDate": "1995-07-07",
+      "resources": {
+        "AllergyIntolerance": 1,
+        "DocumentReference": 1,
+        "Observation": 24,
+        "Patient": 1,
+        "Provenance": 27
+      }
+    },
+    {
+      "file": "bundles/02-ciaran-murphy.json",
+      "ips": "summaries/02-ciaran-murphy.json",
+      "patient_id": "086cdc41-a18b-4ca5-bb15-1c1fd7df2966",
+      "name": "Ciarán Murphy",
+      "gender": "male",
+      "birthDate": "1987-11-02",
+      "resources": {
+        "Condition": 2,
+        "DocumentReference": 1,
+        "MedicationStatement": 1,
+        "Observation": 199,
+        "Patient": 1,
+        "Provenance": 204
+      }
+    },
+    {
+      "file": "bundles/03-giulia-rossi.json",
+      "ips": "summaries/03-giulia-rossi.json",
+      "patient_id": "20661681-97b8-49d0-97e0-e8e0ccdbbaf4",
+      "name": "Giulia Rossi",
+      "gender": "female",
+      "birthDate": "1992-02-14",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 1,
+        "MedicationStatement": 2,
+        "Observation": 193,
+        "Patient": 1,
+        "Provenance": 198
+      }
+    },
+    {
+      "file": "bundles/04-andrei-popescu.json",
+      "ips": "summaries/04-andrei-popescu.json",
+      "patient_id": "2066a995-72c5-4b2d-87c3-3ee64dcf2cfb",
+      "name": "Andrei Popescu",
+      "gender": "male",
+      "birthDate": "1978-04-12",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 2,
+        "MedicationStatement": 2,
+        "Observation": 280,
+        "Patient": 1,
+        "Provenance": 286
+      }
+    },
+    {
+      "file": "bundles/05-jan-kowalczyk.json",
+      "ips": "summaries/05-jan-kowalczyk.json",
+      "patient_id": "20dceb94-67fe-4aaf-96f9-f519c234df8e",
+      "name": "Jan Kowalczyk",
+      "gender": "male",
+      "birthDate": "1983-01-08",
+      "resources": {
+        "AllergyIntolerance": 1,
+        "DocumentReference": 1,
+        "Observation": 467,
+        "Patient": 1,
+        "Provenance": 470
+      }
+    },
+    {
+      "file": "bundles/06-javier-garcia.json",
+      "ips": "summaries/06-javier-garcia.json",
+      "patient_id": "2aebca94-c792-45a3-9103-1978f5278d27",
+      "name": "Javier García",
+      "gender": "male",
+      "birthDate": "1959-10-05",
+      "resources": {
+        "Condition": 3,
+        "DocumentReference": 2,
+        "MedicationStatement": 3,
+        "Observation": 124,
+        "Patient": 1,
+        "Provenance": 133
+      }
+    },
+    {
+      "file": "bundles/07-luca-bianchi.json",
+      "ips": "summaries/07-luca-bianchi.json",
+      "patient_id": "3119542b-8da0-47d8-bef6-0fe9f2baad0e",
+      "name": "Luca Bianchi",
+      "gender": "male",
+      "birthDate": "2019-09-15",
+      "resources": {
+        "AllergyIntolerance": 1,
+        "Condition": 1,
+        "MedicationStatement": 1,
+        "Observation": 21,
+        "Patient": 1,
+        "Provenance": 25
+      }
+    },
+    {
+      "file": "bundles/08-tomas-novak.json",
+      "ips": "summaries/08-tomas-novak.json",
+      "patient_id": "3e056541-14de-4e5f-b690-25182ff2a66a",
+      "name": "Tomáš Novák",
+      "gender": "male",
+      "birthDate": "2008-04-17",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 1,
+        "MedicationStatement": 1,
+        "Observation": 31,
+        "Patient": 1,
+        "Provenance": 35
+      }
+    },
+    {
+      "file": "bundles/09-aino-virtanen.json",
+      "ips": "summaries/09-aino-virtanen.json",
+      "patient_id": "40e56917-f7aa-4d3b-abaa-dfc0458a074a",
+      "name": "Aino Virtanen",
+      "gender": "female",
+      "birthDate": "1966-10-30",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 2,
+        "MedicationStatement": 2,
+        "Observation": 36,
+        "Patient": 1,
+        "Provenance": 42
+      }
+    },
+    {
+      "file": "bundles/10-elena-ionescu.json",
+      "ips": "summaries/10-elena-ionescu.json",
+      "patient_id": "410bef4e-1b23-45a6-adf5-c6adf5ee1813",
+      "name": "Elena Ionescu",
+      "gender": "female",
+      "birthDate": "1985-09-03",
+      "resources": {
+        "AllergyIntolerance": 1,
+        "Condition": 1,
+        "DocumentReference": 2,
+        "MedicationStatement": 1,
+        "Observation": 118,
+        "Patient": 1,
+        "Provenance": 124
+      }
+    },
+    {
+      "file": "bundles/11-chloe-dubois.json",
+      "ips": "summaries/11-chloe-dubois.json",
+      "patient_id": "4949a292-83ca-4ac0-8c94-a48ae9a19928",
+      "name": "Chloé Dubois",
+      "gender": "female",
+      "birthDate": "1979-02-26",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 1,
+        "MedicationStatement": 1,
+        "Observation": 27,
+        "Patient": 1,
+        "Provenance": 31
+      }
+    },
+    {
+      "file": "bundles/12-pieter-de-vries.json",
+      "ips": "summaries/12-pieter-de-vries.json",
+      "patient_id": "49c6653d-58a3-4b63-9c29-eb4557a7de7d",
+      "name": "Pieter de Vries",
+      "gender": "male",
+      "birthDate": "1946-12-02",
+      "resources": {
+        "Condition": 3,
+        "DocumentReference": 3,
+        "MedicationStatement": 6,
+        "Observation": 123,
+        "Patient": 1,
+        "Provenance": 136
+      }
+    },
+    {
+      "file": "bundles/13-felix-gruber.json",
+      "ips": "summaries/13-felix-gruber.json",
+      "patient_id": "53809f2c-2a31-4fa5-9615-91448dd3ebaf",
+      "name": "Felix Gruber",
+      "gender": "male",
+      "birthDate": "1994-12-12",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 1,
+        "MedicationStatement": 1,
+        "Observation": 357,
+        "Patient": 1,
+        "Provenance": 361
+      }
+    },
+    {
+      "file": "bundles/14-matei-dumitrescu.json",
+      "ips": "summaries/14-matei-dumitrescu.json",
+      "patient_id": "5b4e52f1-e42b-4201-8124-937a80efd417",
+      "name": "Matei Dumitrescu",
+      "gender": "male",
+      "birthDate": "2012-01-27",
+      "resources": {
+        "AllergyIntolerance": 1,
+        "Condition": 1,
+        "DocumentReference": 1,
+        "MedicationStatement": 2,
+        "Observation": 59,
+        "Patient": 1,
+        "Provenance": 65
+      }
+    },
+    {
+      "file": "bundles/15-anna-kowalska.json",
+      "ips": "summaries/15-anna-kowalska.json",
+      "patient_id": "5d6542f6-dc8e-4fdd-b02d-5b0a7b33d225",
+      "name": "Anna Kowalska",
+      "gender": "female",
+      "birthDate": "1975-03-11",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 3,
+        "MedicationStatement": 2,
+        "Observation": 63,
+        "Patient": 1,
+        "Provenance": 70
+      }
+    },
+    {
+      "file": "bundles/16-mehmet-yilmaz.json",
+      "ips": "summaries/16-mehmet-yilmaz.json",
+      "patient_id": "601bac76-066e-4f49-8bdc-41060d4b1ae5",
+      "name": "Mehmet Yılmaz",
+      "gender": "male",
+      "birthDate": "1972-09-09",
+      "resources": {
+        "Condition": 3,
+        "DocumentReference": 2,
+        "MedicationStatement": 3,
+        "Observation": 97,
+        "Patient": 1,
+        "Provenance": 106
+      }
+    },
+    {
+      "file": "bundles/17-ruta-kazlauskiene.json",
+      "ips": "summaries/17-ruta-kazlauskiene.json",
+      "patient_id": "6135e603-7bb3-4bea-9d61-5159894467ea",
+      "name": "Rūta Kazlauskienė",
+      "gender": "female",
+      "birthDate": "1988-03-03",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 3,
+        "MedicationStatement": 1,
+        "Observation": 44,
+        "Patient": 1,
+        "Provenance": 50
+      }
+    },
+    {
+      "file": "bundles/18-nikos-papadopoulos.json",
+      "ips": "summaries/18-nikos-papadopoulos.json",
+      "patient_id": "697a8c4a-bdc5-4f80-9acf-a5dd36465e70",
+      "name": "Nikos Papadopoulos",
+      "gender": "male",
+      "birthDate": "1955-01-23",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 2,
+        "MedicationStatement": 2,
+        "Observation": 118,
+        "Patient": 1,
+        "Provenance": 124
+      }
+    },
+    {
+      "file": "bundles/19-ivana-horvat.json",
+      "ips": "summaries/19-ivana-horvat.json",
+      "patient_id": "72717cbc-b163-4ae9-b107-ef7ef8d837ea",
+      "name": "Ivana Horvat",
+      "gender": "female",
+      "birthDate": "1970-05-06",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 3,
+        "MedicationStatement": 1,
+        "Observation": 391,
+        "Patient": 1,
+        "Provenance": 397
+      }
+    },
+    {
+      "file": "bundles/20-lukas-schneider.json",
+      "ips": "summaries/20-lukas-schneider.json",
+      "patient_id": "89f8362e-1cf3-4a15-99d6-1fa16031afa4",
+      "name": "Lukas Schneider",
+      "gender": "male",
+      "birthDate": "1968-07-30",
+      "resources": {
+        "Condition": 2,
+        "DocumentReference": 2,
+        "MedicationStatement": 2,
+        "Observation": 95,
+        "Patient": 1,
+        "Provenance": 102
+      }
+    },
+    {
+      "file": "bundles/21-radu-marinescu.json",
+      "ips": "summaries/21-radu-marinescu.json",
+      "patient_id": "8ea9de3e-f538-4b02-836f-e147ea68961a",
+      "name": "Radu Marinescu",
+      "gender": "male",
+      "birthDate": "2001-02-19",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 2,
+        "MedicationStatement": 1,
+        "Observation": 31,
+        "Patient": 1,
+        "Provenance": 36
+      }
+    },
+    {
+      "file": "bundles/22-olga-petrova.json",
+      "ips": "summaries/22-olga-petrova.json",
+      "patient_id": "8fd0163a-8e03-40cc-a409-531cfe7e5aa1",
+      "name": "Olga Petrova",
+      "gender": "female",
+      "birthDate": "1941-04-01",
+      "resources": {
+        "Condition": 3,
+        "DocumentReference": 6,
+        "MedicationStatement": 3,
+        "Observation": 101,
+        "Patient": 1,
+        "Provenance": 114
+      }
+    },
+    {
+      "file": "bundles/23-cleo-popescu.json",
+      "ips": "summaries/23-cleo-popescu.json",
+      "patient_id": "98aba2d6-a83c-4bd7-89c7-fcc502e6900f",
+      "name": "Cleo Popescu",
+      "gender": "female",
+      "birthDate": "2023-06-08",
+      "resources": {
+        "MedicationStatement": 1,
+        "Observation": 21,
+        "Patient": 1,
+        "Provenance": 23
+      }
+    },
+    {
+      "file": "bundles/24-zsofia-nagy.json",
+      "ips": "summaries/24-zsofia-nagy.json",
+      "patient_id": "b5a0564c-2f03-4795-acf4-7ef87a2337e3",
+      "name": "Zsófia Nagy",
+      "gender": "female",
+      "birthDate": "1963-09-28",
+      "resources": {
+        "Condition": 2,
+        "DocumentReference": 2,
+        "MedicationStatement": 2,
+        "Observation": 29,
+        "Patient": 1,
+        "Provenance": 36
+      }
+    },
+    {
+      "file": "bundles/25-emma-johansson.json",
+      "ips": "summaries/25-emma-johansson.json",
+      "patient_id": "b5fafd6e-1a2c-4aad-a7b9-96e508c9a0e2",
+      "name": "Emma Johansson",
+      "gender": "female",
+      "birthDate": "1983-06-09",
+      "resources": {
+        "Condition": 1,
+        "DocumentReference": 2,
+        "MedicationStatement": 2,
+        "Observation": 120,
+        "Patient": 1,
+        "Provenance": 126
+      }
+    },
+    {
+      "file": "bundles/26-elif-demir.json",
+      "ips": "summaries/26-elif-demir.json",
+      "patient_id": "ca45afe2-1e27-4dbd-a430-9729dd6a3e01",
+      "name": "Elif Demir",
+      "gender": "female",
+      "birthDate": "1990-12-25",
+      "resources": {
+        "Condition": 2,
+        "DocumentReference": 2,
+        "MedicationStatement": 1,
+        "Observation": 54,
+        "Patient": 1,
+        "Provenance": 60
+      }
+    },
+    {
+      "file": "bundles/27-ines-ferreira.json",
+      "ips": "summaries/27-ines-ferreira.json",
+      "patient_id": "d7117474-9ac3-4585-a345-7ffa12d83d37",
+      "name": "Inês Ferreira",
+      "gender": "female",
+      "birthDate": "1998-08-19",
+      "resources": {
+        "AllergyIntolerance": 1,
+        "Condition": 1,
+        "DocumentReference": 1,
+        "MedicationStatement": 1,
+        "Observation": 24,
+        "Patient": 1,
+        "Provenance": 29
+      }
+    },
+    {
+      "file": "bundles/28-mikkel-larsen.json",
+      "ips": "summaries/28-mikkel-larsen.json",
+      "patient_id": "df3ed868-1109-46de-a483-36fcdfde643d",
+      "name": "Mikkel Larsen",
+      "gender": "male",
+      "birthDate": "1952-08-14",
+      "resources": {
+        "Condition": 3,
+        "DocumentReference": 2,
+        "MedicationStatement": 3,
+        "Observation": 52,
+        "Patient": 1,
+        "Provenance": 61
+      }
+    },
+    {
+      "file": "bundles/29-sophie-martin.json",
+      "ips": "summaries/29-sophie-martin.json",
+      "patient_id": "fd18330b-b1cc-41d5-88a3-6c82f9b96d07",
+      "name": "Sophie Martin",
+      "gender": "female",
+      "birthDate": "1990-05-21",
+      "resources": {
+        "Condition": 2,
+        "DocumentReference": 3,
+        "MedicationStatement": 1,
+        "Observation": 36,
+        "Patient": 1,
+        "Provenance": 43
+      }
+    },
+    {
+      "file": "bundles/30-maria-stan.json",
+      "ips": "summaries/30-maria-stan.json",
+      "patient_id": "fd199537-a454-4ab2-a79b-ac0e4558f5a3",
+      "name": "Maria Stan",
+      "gender": "female",
+      "birthDate": "1950-11-19",
+      "resources": {
+        "Condition": 2,
+        "DocumentReference": 3,
+        "MedicationStatement": 2,
+        "Observation": 102,
+        "Patient": 1,
+        "Provenance": 110
+      }
+    }
+  ],
+  "totals": {
+    "AllergyIntolerance": 6,
+    "Condition": 43,
+    "DocumentReference": 57,
+    "MedicationStatement": 51,
+    "Observation": 3437,
+    "Patient": 30,
+    "Provenance": 3624
+  }
+}
